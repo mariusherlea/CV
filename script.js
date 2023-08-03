@@ -12,12 +12,12 @@ let menu={
         let p_content=document.getElementById('eu').innerHTML;
         console.log(p_content);
         console.log(menu);
-        
+
         if(p_content=='Home'){
             document.getElementById('eu').innerHTML='Hallo';
     
         } else if(p_content=='CV'){
-            // document.write(`<p>I'm overexperienced</p>`)
+            document.getElementById('eu').innerHTML='CVC';
         } else {
             // document.write(`<p>I'm sorry, i miss the corect adress</p>`)
         }
