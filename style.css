@@ -29,6 +29,6 @@
     flex-grow: 1;
     order: 2;
 } */
-*{
-    font-size: 34px;
+h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }

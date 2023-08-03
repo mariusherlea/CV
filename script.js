@@ -4,21 +4,27 @@
 // let namea=prompt('What your name is?');
 // alert (`Hello ${namea}`)
 // alert( `hello ${1}` );
-function newContent(){
-    let p_content=document.getElementById('eu').innerHTML;
-    console.log(p_content);
-document.write(`${p_content}`)
 
+let menu={
+    button:3,
+    background_color:'black',
+    render:function(){
+        let p_content=document.getElementById('eu').innerHTML;
+        console.log(p_content);
+    
         if(p_content=='Home'){
-            document.write(`<p>I'm home</p>`)
+            document.getElementById('eu').innerHTML='Hallo';
+    
         } else if(p_content=='CV'){
-            document.write(`<p>I'm overexperienced</p>`)
+            // document.write(`<p>I'm overexperienced</p>`)
         } else {
-            document.write(`<p>I'm sorry, i miss the corect adress</p>`)
+            // document.write(`<p>I'm sorry, i miss the corect adress</p>`)
         }
-
-
+    
+    }
 }
+
+
 
 // let dbsq=dblSgl.replace('blue','green')
 // console.log(dbsq)
