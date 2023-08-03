@@ -11,7 +11,8 @@ let menu={
     render:function(){
         let p_content=document.getElementById('eu').innerHTML;
         console.log(p_content);
-    
+        console.log(menu);
+        
         if(p_content=='Home'){
             document.getElementById('eu').innerHTML='Hallo';
     
