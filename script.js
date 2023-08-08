@@ -1,4 +1,5 @@
 let p_content=document.getElementById('header').innerHTML;
+
 let header={
     'background-color':'yellow',
     render:function(){
@@ -40,10 +41,12 @@ let content={
 
         Home.appendChild(document.createTextNode('Home'));
         CV.appendChild(document.createTextNode('CV'));
-        ul.appendChild(Home);
-        ul.appendChild(CV);
-
         
+        if(p_content=='Home'){
+            ul.appendChild(CV);
+        } else if(p_content=='CV'){
+            ul.appendChild(Home);
+        }
 
         Home.onclick=function(){
             window.location='index.html'
