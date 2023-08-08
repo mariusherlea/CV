@@ -29,6 +29,10 @@
     flex-grow: 1;
     order: 2;
 } */
-h1{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+*{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+p{
+    color: red;
 }
