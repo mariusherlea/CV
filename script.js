@@ -11,12 +11,12 @@ let header={
         // console.log(content['background-color']);
 
         if(p_content=='Home'){
-            document.getElementById('header').innerHTML='Marius Herlea HomePage. Willkommen !';
+            document.getElementById('header').innerHTML='Marius Herlea HomePage.';
 
             // backgroundColor = background-color
             
             cevaCS.style.backgroundColor=this["background-color"];
-            document.getElementById('header').style.backgroundColor='blue';
+            document.getElementById('header').style.backgroundColor='aqua';
 
         } else if(p_content=='CV'){
 
@@ -58,9 +58,22 @@ let content={
     
 }
 
+let ageCalculation={
+
+    calcAge:function(birthYear){
+        document.getElementById('age').innerHTML = new Date().getFullYear() - birthYear ;
+    },
+    addCurrentYear:function(){
+        document.getElementById('curentYear').innerHTML = new Date().getFullYear();
+    }
+    
+}
+
 window.addEventListener('load',myInit, true);
 
 function myInit(){
     header.render();
     content.print();
+    ageCalculation.calcAge(1977);
+    ageCalculation.addCurrentYear();
 }
