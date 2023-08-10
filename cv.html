@@ -3,10 +3,12 @@
     <head>
         <title>CV</title>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="script.js" type="text/javascript" defer></script>
         <link rel="stylesheet" href="style.css">
         
     </head>
+    
     <body>
         <div>
             <h1 id="header">CV</h1>
@@ -21,8 +23,8 @@
                     </li>
 
                     <li>
-                        <h2>HERLEA ION MARIUS</h2>
-                        <h3>Age</h3><p id="age"></p>
+                        <h1>HERLEA ION MARIUS</h1>
+                        <h3>Age</h3><p id="age"><script>document.getElementById('age').innerHTML = new Date().getFullYear() - 1977 ;</script></p>
                         <script></script>
                     </li>
 
@@ -47,47 +49,15 @@
                             follow it.
                         </p>
                     </li>
-
-                    <li>
-                        <h3>Professional experience</h3>
-                    </li>
-
-                    <li>
-
-                        <ol>
-                            <li>
-                                Apr 2016 - Nov 2019 <strong>Forklift operator</strong> –
-                                KUEHNE+NAGEL, Worktown: Sebes, Fields of activity: Logistics
-                            </li>
-
-                            <li>
-                                Mar 2014 - Feb 2015 <strong>Deputy Chief Shop</strong> – Billa,
-                                Worktown: Sebes, Fields of activity: Sales
-                            </li>
-
-                            <li>
-                                Feb 2013 - Aug 2013 <strong>Store chief </strong> – Profi,
-                                Worktown: Abrud, Fields of activity: Sales
-                            </li>
-
-                            <li>
-                                Aug 2012 - Aug 2013 <strong>Deputy Chief Shop</strong> – Penny
-                                Market, Worktown: Sebes, Fields of activity: Sales
-                            </li>
+                </ul>
                 
-                            <li>
-                                Feb 2010 - Aug 2011 <strong>Commercial worker</strong> –
-                                Kaufland, Worktown: Orastie, Fields of activity: Sales
-                            </li>
-                
-                            <li>
-                                Mar 2000 - Oct 2008 <strong>Copy editor</strong> – 1 Decembrie
-                                1918 University, Worktown: Alba Iulia, Fields of activity:
-                                Printing / Publishing
-                            </li>
-                        </ol>
-                    </li>
-            
+
+            <h3>Professional experience</h3>
+
+                        <div id="experience"></div>
+
+
+                <ul>
                     <li>
                             <h3>Education</h3>
                     </li>
@@ -105,7 +75,7 @@
                             </li>
                         </ol>
                     </li>
-
+                
                     <li>
                         <h3>Trainings</h3>
                     </li>
