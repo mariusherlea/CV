@@ -66,55 +66,36 @@ let ageCalculation={
     
 }
 
+class Experience {
+
+    period;
+    position;
+    company;
+    workTown;
+    fieldOfActivities;
+
+    constructor(period, position, company, workTown, fieldOfActivities){
+        this.period=period;
+        this.position=position;
+        this.company=company;
+        this.workTown=workTown;
+        this.fieldOfActivities=fieldOfActivities;
+    }
+}
+
 const experienceList={
     experience:[
-        {
-            period:'Apr 2016 - Nov 2019',
-            position:'Forklift operator',
-            company:'KHUENE+NAGEL',
-            workTown:'Sebes',
-            fieldOfActivities:'Logistics'
-        },
+        forklift=new Experience('Apr 2016 - Nov 2019','Forklift operator','KHUENE+NAGEL','Sebes','Logistics'),
 
-        {
-            period:'Mar 2014 - Feb 2015',
-            position:'Deputy Chief Shop',
-            company:'Billa',
-            workTown:'Sebes',
-            fieldOfActivities:'Sales'
-        },
+        deputyBilla=new Experience('Mar 2014 - Feb 2015','Deputy Chief Shop','Billa','Sebes','Sales'),
 
-        {
-            period:'Feb 2013 - Aug 2013',
-            position:'Chief Shop',
-            company:'Profi',
-            workTown:'Abrud',
-            fieldOfActivities:'Sales'
-        },
+        chiefProfi=new Experience('Feb 2013 - Aug 2013', 'Chief Shop', 'Abrud', 'Sales'),
 
-        {
-            period:'Aug 2012 - Aug 2013',
-            position:'Deputy Chief Shop',
-            company:'Penny Market',
-            workTown:'Sebes',
-            fieldOfActivities:'Sales'
-        },
+        deputyPenny=new Experience('Aug 2012 - Aug 2013','Deputy Chief Shop','Penny Market','Sebes','Sales'),
 
-        {
-            period:'Feb 2010 - Aug 2011',
-            position:'Commercial worker',
-            company:'Kaufland',
-            workTown:'Orastie',
-            fieldOfActivities:'Sales'
-        },
+        workerKaufland=new Experience('Feb 2010 - Aug 2011','Commercial worker','Kaufland','Orastie','Sales'),
 
-        {
-            period:'Mar 2000 - Oct 2008',
-            position:'Copy Editor',
-            company:'Alba Iulia University',
-            workTown:'Alba Iulia',
-            fieldOfActivities:'Printing / Publishing'
-        }
+        editorUniv=new Experience('Mar 2000 - Oct 2008','Copy Editor','Alba Iulia University','Alba Iulia','Printing / Publishing')
 
     ],
 
