@@ -45,14 +45,18 @@ const experienceList={
         const millisecondsInMinute = 60 * millisecondsInSecond;
         const millisecondsInHour = 60 * millisecondsInMinute;
         const millisecondsInDay = 24 * millisecondsInHour;
-        
+        const millisecondsInMonth=30 * millisecondsInDay;
 
-        const days = Math.floor(timeDifference / millisecondsInDay);
+        const month = Math.floor(timeDifference / millisecondsInMonth);
+        const days=Math.floor((timeDifference % millisecondsInMonth) / millisecondsInDay);
         const hours = Math.floor((timeDifference % millisecondsInDay) / millisecondsInHour);
         const minutes = Math.floor((timeDifference % millisecondsInHour) / millisecondsInMinute);
         const seconds = Math.floor((timeDifference % millisecondsInMinute) / millisecondsInSecond);
 
-        return(`${days} days, ${hours} hours, ${minutes} minutes, ${seconds} seconds`);
+        // const months= Math.floor(days/30);
+
+        return(`${month} month, ${days} days, ${hours} hours, ${minutes} minutes, ${seconds} seconds`);
+        // return(`${months}`);
 
     },
 
