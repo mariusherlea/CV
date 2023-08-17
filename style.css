@@ -1,11 +1,16 @@
 *{
     background-color: rgb(4, 1, 24);
     color: white;
-    font-size: 100%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
 }
 
 h1{
     font-size: 2rem;
+}
+
+h2{
+    font-size: 1.5rem;
 }
 
 button{
@@ -24,4 +29,22 @@ button{
 }
 .cv{
     display: inline;
+}
+
+#contact{
+    text-align: center;
+    border-bottom: 1px solid #07f55e;
+}
+
+#content{
+    display: flex;
+}
+
+#experience{
+    width: 50%;
+    border-right: 1px solid yellow;
+}
+
+#education{
+    width: 50%;
 }

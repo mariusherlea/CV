@@ -15,6 +15,8 @@ class Experience {
         this.workTown=workTown;
         this.fieldOfActivities=fieldOfActivities;
     }
+
+    
 }
 
 
@@ -68,8 +70,8 @@ const experienceList={
             const expEl=document.createElement('li');
             expEl.innerHTML=`
             <div>
-                <h2>${exp.date_start} - ${exp.date_end}</h2>
-                <h3>${exp.position}</h3>
+                <h4>${exp.date_start} - ${exp.date_end}</h4>
+                <h2>${exp.position}</h2>
                 <p>Company: ${exp.company}</p>
                 <p>WorkTown: ${exp.workTown}</p>
                 <p>Fields of activities: ${exp.fieldOfActivities}</p>
