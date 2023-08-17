@@ -39,26 +39,41 @@ const experienceList={
 
 
     calculateTime(date_start,date_end){
-        // Calculate the time difference in milliseconds
-        const timeDifference = date_end - date_start;
+        // // Calculate the time difference in milliseconds
+        // const timeDifference = date_end - date_start;
 
-        // Convert the time difference to days, hours, minutes, and seconds
-        const millisecondsInSecond = 1000;
-        const millisecondsInMinute = 60 * millisecondsInSecond;
-        const millisecondsInHour = 60 * millisecondsInMinute;
-        const millisecondsInDay = 24 * millisecondsInHour;
-        const millisecondsInMonth=30 * millisecondsInDay;
+        // // Convert the time difference to days, hours, minutes, and seconds
+        // const millisecondsInSecond = 1000;
+        // const millisecondsInMinute = 60 * millisecondsInSecond;
+        // const millisecondsInHour = 60 * millisecondsInMinute;
+        // const millisecondsInDay = 24 * millisecondsInHour;
 
-        const month = Math.floor(timeDifference / millisecondsInMonth);
-        const days=Math.floor((timeDifference % millisecondsInMonth) / millisecondsInDay);
-        const hours = Math.floor((timeDifference % millisecondsInDay) / millisecondsInHour);
-        const minutes = Math.floor((timeDifference % millisecondsInHour) / millisecondsInMinute);
-        const seconds = Math.floor((timeDifference % millisecondsInMinute) / millisecondsInSecond);
+        // const days=Math.floor(timeDifference / millisecondsInDay);
+        // const hours = Math.floor((timeDifference % millisecondsInDay) / millisecondsInHour);
+        // const minutes = Math.floor((timeDifference % millisecondsInHour) / millisecondsInMinute);
+        // const seconds = Math.floor((timeDifference % millisecondsInMinute) / millisecondsInSecond);
 
-        // const months= Math.floor(days/30);
 
-        return(`${month} month, ${days} days, ${hours} hours, ${minutes} minutes, ${seconds} seconds`);
-        // return(`${months}`);
+
+        // return(` ${days} days, ${hours} hours, ${minutes} minutes, ${seconds} seconds`);
+
+        let distance = Math.abs(date_end - date_start);
+
+        const years=Math.floor(distance/(((3600000*24)*30)*12));
+        distance-=years*(((3600000*24)*30)*12);
+        const months=Math.floor(distance/((3600000*24)*30));
+        distance-=months*((3600000*24)*30);
+        const days = Math.floor(distance / (3600000*24));
+        distance -=days*(3600000*24);
+        const hours = Math.floor(distance / 3600000);
+        distance -= hours * 3600000;
+        const minutes = Math.floor(distance / 60000);
+        distance -= minutes * 60000;
+        const seconds = Math.floor(distance / 1000);
+        return ` ${years} years ${months} month ${days} days `;
+    
+
+
 
     },
 
