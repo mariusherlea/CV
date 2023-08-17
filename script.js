@@ -23,7 +23,7 @@ let header={
             document.getElementById('header').innerHTML='Curricullum Vitae';
 
             cevaCS.style.backgroundColor="cyan";
-            document.getElementById('header').style.backgroundColor='green';
+            document.getElementById('header').style.backgroundColor='yellow';
         
         } else {
         }

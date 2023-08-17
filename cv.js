@@ -86,7 +86,7 @@ const experienceList={
             expEl.innerHTML=`
             <div>
                 <h4>${exp.date_start} - ${exp.date_end}</h4>
-                <h2>${exp.position}</h2>
+                <h3>${exp.position}</h3>
                 <p>Company: ${exp.company}</p>
                 <p>WorkTown: ${exp.workTown}</p>
                 <p>Fields of activities: ${exp.fieldOfActivities}</p>
