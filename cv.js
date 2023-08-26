@@ -36,8 +36,8 @@ class Experience {
 const experienceList = {
   experience: [
     (forklift = new Experience(
-      `${new Date("2020-01-10T14:00:00")}`,
-      `${new Date("2023-11-10T14:00:00")}`,
+      `${new Date("2016-01-10T14:00:00")}`,
+      `${new Date("2019-11-10T14:00:00")}`,
       "Forklift operator",
       "KHUENE+NAGEL",
       "Sebes",
