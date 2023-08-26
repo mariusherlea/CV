@@ -39,23 +39,7 @@ const experienceList={
 
 
     calculateTime(date_start,date_end){
-        // // Calculate the time difference in milliseconds
-        // const timeDifference = date_end - date_start;
 
-        // // Convert the time difference to days, hours, minutes, and seconds
-        // const millisecondsInSecond = 1000;
-        // const millisecondsInMinute = 60 * millisecondsInSecond;
-        // const millisecondsInHour = 60 * millisecondsInMinute;
-        // const millisecondsInDay = 24 * millisecondsInHour;
-
-        // const days=Math.floor(timeDifference / millisecondsInDay);
-        // const hours = Math.floor((timeDifference % millisecondsInDay) / millisecondsInHour);
-        // const minutes = Math.floor((timeDifference % millisecondsInHour) / millisecondsInMinute);
-        // const seconds = Math.floor((timeDifference % millisecondsInMinute) / millisecondsInSecond);
-
-
-
-        // return(` ${days} days, ${hours} hours, ${minutes} minutes, ${seconds} seconds`);
 
         let distance = Math.abs(date_end - date_start);
 
@@ -80,7 +64,7 @@ const experienceList={
 
     render(){
         const renderHook=document.getElementById('experience');
-        const expList=document.createElement('ol');
+        const expList=document.createElement('ul');
         for(exp of this.experience){
             const expEl=document.createElement('li');
             expEl.innerHTML=`
@@ -90,8 +74,9 @@ const experienceList={
                 <p>Company: ${exp.company}</p>
                 <p>WorkTown: ${exp.workTown}</p>
                 <p>Fields of activities: ${exp.fieldOfActivities}</p>
-                <p>${(this.calculateTime(new Date(exp.date_start),new Date(exp.date_end)))}</p>
-            </div>            
+                <p>${(this.calculateTime(new Date(exp.date_start),new Date(exp.date_end)))}</p></ul>  
+            </div>  
+                    
             `;
             expList.append(expEl);
         }
