@@ -108,9 +108,8 @@ const experienceList = {
     for (exp of this.experience) {
       const expEl = document.createElement("li");
       expEl.innerHTML = `
-            <div>
-                <h4>${exp.date_start} - ${exp.date_end}</h4>
                 <h3>${exp.position}</h3>
+                <h4>${exp.date_start} - ${exp.date_end}</h4>
                 <p>Company: ${exp.company}</p>
                 <p>WorkTown: ${exp.workTown}</p>
                 <p>Fields of activities: ${exp.fieldOfActivities}</p>
@@ -118,7 +117,7 @@ const experienceList = {
                   new Date(exp.date_start),
                   new Date(exp.date_end)
                 )}</p>  
-            </div>  
+            
                     
             `;
       expList.append(expEl);
