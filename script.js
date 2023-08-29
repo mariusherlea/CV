@@ -23,8 +23,8 @@ let header = {
 let content = {
   print: function () {
     var ul = document.getElementById("menu-nav");
-    var Home = document.createElement("button");
-    var CV = document.createElement("button");
+    var Home = document.createElement("li");
+    var CV = document.createElement("li");
 
     Home.appendChild(document.createTextNode("Home"));
     CV.appendChild(document.createTextNode("CV"));
