@@ -6,7 +6,7 @@ let header = {
     const cevaCS = document.getElementById("menu-nav");
 
     if (p_content == "Home") {
-      document.getElementById("header").innerHTML = "Marius Herlea HomePage.";
+      document.getElementById("header").innerHTML = "Marius Herlea HomePage";
 
       cevaCS.style.backgroundColor = this["background-color"];
       document.getElementById("header").style.backgroundColor = "aqua";

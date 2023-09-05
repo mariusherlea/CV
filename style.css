@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=M+PLUS+Code+Latin:wght@100;200;300;400;500;600;700&display=swap");
 * {
   font-family: Poppins;
   margin: 0;
@@ -14,8 +14,31 @@
   padding: 0 1rem;
 }
 
+#header {
+  display: block;
+  font-family: Caveat;
+  font-size: 5rem;
+  color: #ffffff;
+  background: #0e8dbc;
+  text-shadow: 0 1px 0 #cccccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9,
+    0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1),
+    0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2),
+    0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2),
+    0 20px 20px rgba(0, 0, 0, 0.15);
+}
+
+.enumeration {
+  display: flex;
+  justify-content: space-around;
+}
+
+.logo {
+  text-align: center;
+}
+
 h2 {
-  margin-top: 1rem;
+  text-align: center;
+  color: #3345e5;
 }
 
 .header {
@@ -51,10 +74,16 @@ ul {
   margin-left: 1rem;
 }
 
+ul > li {
+  margin: 1rem 0;
+}
+
 ol {
   margin-left: 1rem;
 }
-
+ol > li {
+  margin: 1rem 0;
+}
 #menu-nav {
   font-size: 1.2rem;
 }
@@ -67,6 +96,9 @@ ol {
 @media (max-width: 768px) {
   /* For mobile: */
   .row {
+    flex-direction: column;
+  }
+  .enumeration {
     flex-direction: column;
   }
 }
