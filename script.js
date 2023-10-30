@@ -93,4 +93,7 @@ function drawWeather(d) {
   document.getElementById("description").innerHTML = d.weather[0].description;
   document.getElementById("temp").innerHTML = celcius + "&deg;";
   document.getElementById("location").innerHTML = d.name;
+  document.getElementById(
+    "icon"
+  ).src = `http://openweathermap.org/img/w/${d.weather[0].icon}.png`;
 }
