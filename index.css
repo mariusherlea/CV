@@ -1,9 +1,47 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=M+PLUS+Code+Latin:wght@100;200;300;400;500;600;700&display=swap");
-* {
-  font-family: Poppins;
-  margin: 0;
+@import url("https://fonts.googleapis.com/css2?family=Special+Elite&display=swap");
+
+body {
+  height: 100%;
+}
+
+main {
+  margin: 0 auto;
+}
+nav {
+  width: 100%;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
   padding: 0;
+  margin: 0;
+  justify-content: flex-start;
+}
+
+nav ul li {
+  padding: 0.5rem;
+  border-top: 1px solid gray;
+  border-left: 1px solid gray;
+  border-right: 1px solid gray;
+  border-bottom: 1px solid gray;
+
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+nav ul a {
+  text-decoration: none;
+}
+
+nav li.active {
+  background-color: lightseagreen;
+  color: white;
+}
+
+.hidden {
+  display: none;
 }
 
 .row {
@@ -11,7 +49,7 @@
 }
 
 .row > div {
-  padding: 0 1rem;
+  padding: 0;
 }
 
 #header {
@@ -32,8 +70,50 @@
   justify-content: space-around;
 }
 
-.logo {
-  text-align: center;
+.slogan {
+  font-family: "Special Elite", cursive;
+  background: #fffdf5;
+  color: #3f3f5a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+blockquote {
+  font-weight: 100;
+  font-size: 2rem;
+  max-width: 600px;
+  line-height: 1.4;
+  position: relative;
+  margin: 0;
+  padding: 0.5rem;
+}
+
+blockquote:before,
+blockquote:after {
+  position: absolute;
+  color: #f1efe6;
+  font-size: 8rem;
+  width: 4rem;
+  height: 4rem;
+}
+
+blockquote:before {
+  content: "“";
+  left: -5rem;
+  top: -2rem;
+}
+
+blockquote:after {
+  content: "”";
+  right: -5rem;
+  bottom: 1rem;
+}
+
+cite {
+  line-height: 3;
+  text-align: left;
 }
 
 h2 {
@@ -55,8 +135,11 @@ h2 {
 }
 
 .left {
+  margin-left: 15px;
+  margin-right: 10px;
   list-style-type: none;
-  padding: 8px;
+  padding-left: 15px;
+  padding-left: 15px;
   background-color: #33b5e5;
   color: #ffffff;
 }
@@ -64,14 +147,16 @@ h2 {
 a {
   text-decoration: none;
 }
-
+#section3 > div.row > div.left > ul > li:nth-child(1) > div > a:nth-child(2) {
+  margin-right: 15px;
+}
 a:hover {
   color: #c00d28;
 }
 
 ul {
   list-style-type: none;
-  margin-left: 1rem;
+  padding-inline-start: 10px;
 }
 
 ul > li {
@@ -100,5 +185,12 @@ ol > li {
   }
   .enumeration {
     flex-direction: column;
+  }
+
+  blockquote::before {
+    content: none;
+  }
+  blockquote::after {
+    content: none;
   }
 }

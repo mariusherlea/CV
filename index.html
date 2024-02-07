@@ -1,51 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>MariusHerlea</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <title>Improved CV</title>
+    <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-    <div>
-      <span id="header">Home</span>
-      <ul id="menu-nav"></ul>
-    </div>
-    <div class="logo">
-      <h1>Marius Website</h1>
-      <p>Do what you like.</p>
-      <p>Practice make perfect !</p>
-    </div>
+    <main>
+      <div></div>
+      <nav>
+        <h1>Marius Website</h1>
+        <ul>
+          <li class="active"><a href="#section1">Home</a></li>
+          <li><a href="#section2">Projects</a></li>
+          <li><a href="#section3">Curriculum vitae</a></li>
+        </ul>
+      </nav>
+      <article>
+        <section id="section1">
+          <div class="slogan">
+            <blockquote>Do what you like.</blockquote>
+            <blockquote>Practice make perfect !</blockquote>
+          </div>
+        </section>
 
-    <div class="portfolio">
-      <h2>Portfolio</h2>
-      <ul class="enumeration">
-        <li>
-          <h3><a href="https://miherlea.000webhostapp.com/">This site</a></h3>
-        </li>
-      </ul>
-    </div>
+        <section class="hidden" id="section2">
+          <div class="portfolio">
+            <h2>Portfolio</h2>
+            <ul class="enumeration">
+              <li>
+                <h3>
+                  <a href="https://mariusherlea.github.io/atm-denomination/"
+                    >This site</a
+                  >
+                </h3>
+              </li>
+            </ul>
+          </div>
+        </section>
 
-    <div>
-      <h2>About</h2>
-      <p>
-        I had a rather narrow perspective and I wanted a certain technology, but
-        over time that has changed. And now I'm curious about all that web
-        development means. Details about me.
-      </p>
-    </div>
-
-    <div>
-      <h2>Contact</h2>
-      <ul class="enumeration">
-        <li><a href="https://www.facebook.com/marius.herlea">Facebook</a></li>
-        <li>
-          <a href="https://www.linkedin.com/in/mariusherlea/">Linkedin</a>
-        </li>
-      </ul>
-
-      &copy;<b id="curentYear"></b>
-    </div>
+        <section class="hidden" id="section3">
+          <div class="header">
+            <img src="img/1.jpg" alt="Marius picture" style="width: 10%" />
+            <h1>Marius Herlea</h1>
+            <h4>Student</h4>
+            <p id="age">
+              <script>
+                document.getElementById("age").innerHTML =
+                  new Date().getFullYear() - 1977;
+              </script>
+            </p>
+          </div>
+      
+          <div style="text-align: center">
+            <h2>Objective</h2>
+            <p>Work as a Front end developer.</p>
+          </div>
+      
+          <div class="row">
+            <div class="left">
+              <ul>
+                <li>
+                  <div>
+                    <h2>Training</h2>
+      
+                    <a
+                      href="https://github.com/speedy4all/pentastagiu-java-2019-2020/tree/mariusherlea"
+                      >Pentastagiu-java-2019-2020 Pentalog</a
+                    ><br />
+                    <a
+                      href="https://github.com/mariusherlea/php-hackathon-2021/tree/main"
+                      >Evozon Php-Hackathon-2021</a
+                    ><br>
+                    <a href="#">SkillBrain FrontEnd Online Course</a>
+      
+                    <h2>Personal project</h2>
+      
+                    <ul>
+                      <li>
+                        <a href="https://miherlea.000webhostapp.com/index.html"
+                          >This website</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+      
+                <li>
+                  <h2>Skills</h2>
+      
+                  <ul>
+                    <li>
+                      <strong class="skills">Programming</strong>
+                    </li>
+                    <li>Html</li>
+                    <li>CSS</li>
+                    <li>Java Script</li>
+      
+                    <li>
+                      <strong class="skills">Economics</strong>
+                    </li>
+                    <li>Recognising value</li>
+                    <li>Economics principle</li>
+      
+                    <li>
+                      <strong class="skills">Other</strong>
+                    </li>
+                    <li>Discipline</li>
+                    <li>Hard working</li>
+                  </ul>
+                </li>
+      
+                <li>
+                  <div>
+                    <h2>Contact</h2>
+                    <ul>
+                      
+                      <li>
+                        <a href="tel:+40722256129">+40722256129</a>
+                      </li>
+                      <br />
+                      <li>
+                        <strong>EmailId</strong>
+                      </li>
+                      <li>
+                        <a href="mailto:mariusherlea@gmail.com">
+                          mariusherlea@gmail.com</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+      
+            <div>
+              <div id="experience">
+                <h2>Professional experience</h2>
+              </div>
+      
+              <div>
+                <h2>Education</h2>
+      
+                <ol>
+                  <li>
+                    <dl>
+                      <dt>2016-2019</dt>
+                      <dd>Informatics,</dd>
+                      <dd>Universitatea Alba-Iulia</dd>
+                      <dd>
+                        <strong>I rediscover the passion for programming.</strong>
+                      </dd>
+                    </dl>
+                  </li>
+                  <li>
+                    <dl>
+                      <dt>1997-2003</dt>
+                      <dd>Economics,</dd>
+                      <dd>Universitatea Alba-Iulia</dd>
+                      <dd>
+                        <strong
+                          >I learn a bit about value and money, which prove usefull
+                          later.</strong
+                        >
+                      </dd>
+                    </dl>
+                  </li>
+                </ol>
+              </div>
+        </section>
+      </article>
+    </main>
+    &copy;<b id="curentYear"></b>
   </body>
-  <script src="script.js" type="text/javascript" defer></script>
+  <script src="./scripts/script.js"></script>
+  <script src="./scripts/cv.js"></script>
 </html>
