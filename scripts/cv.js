@@ -129,6 +129,6 @@ const experienceList = {
 window.addEventListener("load", myInit, true);
 
 function myInit() {
-  ageCalculation.addCurrentYear();
   experienceList.render();
+  document.getElementById("currentYear").innerHTML = new Date().getFullYear();
 }
