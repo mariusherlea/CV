@@ -126,9 +126,9 @@ const experienceList = {
   },
 };
 
-window.addEventListener("load", myInit, true);
+window.addEventListener("load", myInit);
 
 function myInit() {
   experienceList.render();
-  document.getElementById("currentYear").innerHTML = new Date().getFullYear();
+  document.getElementById("age").innerHTML = new Date().getFullYear() - 1977;
 }

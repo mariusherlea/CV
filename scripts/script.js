@@ -4,11 +4,14 @@ const sectionElements = document.querySelectorAll("section");
 
 navBarLinks.forEach((link) => {
   link.addEventListener("click", (event) => {
+    event.preventDefault(); // Prevent the default action of following the link
     removeActiveLinks();
-    hideSection();
+    hideSections();
     link.parentElement.classList.add("active");
-    const sectionElements = document.querySelector(link.hash);
-    sectionElements.classList.remove("hidden");
+    const targetSection = document.querySelector(link.hash); // Get the target section
+    if (targetSection) {
+      targetSection.classList.remove("hidden"); // Show the target section
+    }
   });
 });
 
@@ -18,8 +21,10 @@ const removeActiveLinks = () => {
   });
 };
 
-const hideSection = () => {
+const hideSections = () => {
   sectionElements.forEach((section) => {
     section.classList.add("hidden");
   });
 };
+
+document.getElementById("currentYear").innerHTML = new Date().getFullYear();
