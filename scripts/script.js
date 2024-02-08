@@ -43,3 +43,43 @@ const darkMode = () => {
     themeChanger.style.color = "white";
   }
 };
+
+async function getData() {
+  const url = "https://moviesdatabase.p.rapidapi.com/titles";
+  const options = {
+    method: "GET",
+    headers: {
+      "X-RapidAPI-Key": "20aff73ed2msh0760b4e4e8501c2p139cb9jsn721fbaf10aba",
+      "X-RapidAPI-Host": "moviesdatabase.p.rapidapi.com",
+    },
+  };
+  try {
+    const response = await fetch(url, options);
+    const result = await response.text();
+    return JSON.parse(result);
+  } catch (error) {
+    console.error(error);
+  }
+}
+
+async function displayMovies() {
+  const result = await getData();
+  console.log(result);
+  console.log(result.results.map((movie) => movie.titleText.text));
+  const moviesList = document.querySelector("#movies");
+  moviesList.innerHTML = result.results
+    .map(
+      (movie) => `<ul>
+    <li>
+    ${movie.titleText.text}
+    ${movie.releaseYear.year}
+   
+    </li>
+    </ul>`
+    )
+    .join(" ");
+
+  console.log();
+}
+
+displayMovies();
