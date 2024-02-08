@@ -1,9 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=M+PLUS+Code+Latin:wght@100;200;300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Special+Elite&display=swap");
 
 body {
   height: 100%;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+h1 {
+  font-family: "Special Elite", cursive;
 }
 
 main {
@@ -19,15 +22,13 @@ nav ul {
   padding: 0;
   margin: 0;
   justify-content: flex-start;
+  font-size: large;
+  font-family: "Caveat";
 }
 
 nav ul li {
   padding: 0.5rem;
-  border-top: 1px solid gray;
-  border-left: 1px solid gray;
-  border-right: 1px solid gray;
   border-bottom: 1px solid gray;
-
   border-top-left-radius: 0.5rem;
   border-top-right-radius: 0.5rem;
 }
@@ -36,7 +37,7 @@ nav ul a {
 }
 
 nav li.active {
-  background-color: lightseagreen;
+  background-color: rgb(147, 243, 238);
   color: white;
 }
 
@@ -54,26 +55,13 @@ nav li.active {
 
 #header {
   display: block;
-  font-family: Caveat;
   font-size: 2rem;
   color: #ffffff;
   background: #0e8dbc;
-  text-shadow: 0 1px 0 #cccccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9,
-    0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1),
-    0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2),
-    0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2),
-    0 20px 20px rgba(0, 0, 0, 0.15);
-}
-
-.enumeration {
-  display: flex;
-  justify-content: space-around;
 }
 
 .slogan {
   font-family: "Special Elite", cursive;
-  background: #fffdf5;
-  color: #3f3f5a;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -93,27 +81,21 @@ blockquote {
 blockquote:before,
 blockquote:after {
   position: absolute;
-  color: #f1efe6;
-  font-size: 8rem;
-  width: 4rem;
-  height: 4rem;
+  font-size: 1.5rem;
+  width: 3rem;
+  height: 3rem;
 }
 
 blockquote:before {
   content: "“";
-  left: -5rem;
-  top: -2rem;
+  left: -1rem;
+  top: -0.5rem;
 }
 
 blockquote:after {
   content: "”";
-  right: -5rem;
+  right: -2rem;
   bottom: 1rem;
-}
-
-cite {
-  line-height: 3;
-  text-align: left;
 }
 
 h2 {
@@ -175,6 +157,24 @@ ol > li {
 
 #menu-nav:hover {
   color: #c00d28;
+  cursor: pointer;
+}
+
+.dark {
+  background-color: #222;
+  color: #e6e6e6;
+}
+
+.home-header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#theme-changer {
+  height: 25px;
+  background-color: rgba(255, 255, 255, 0);
+  border: 0;
   cursor: pointer;
 }
 

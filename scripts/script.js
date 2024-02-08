@@ -1,5 +1,5 @@
 const navElement = document.querySelector("nav");
-const navBarLinks = document.querySelectorAll("a");
+const navBarLinks = document.querySelectorAll("nav a");
 const sectionElements = document.querySelectorAll("section");
 
 navBarLinks.forEach((link) => {
@@ -28,3 +28,18 @@ const hideSections = () => {
 };
 
 document.getElementById("currentYear").innerHTML = new Date().getFullYear();
+
+const themeChanger = document.querySelector("#theme-changer");
+
+const darkMode = () => {
+  const body = document.querySelector("body");
+  if (body.classList.contains("dark")) {
+    body.classList.remove("dark");
+    themeChanger.innerHTML = "White Mode";
+    themeChanger.style.color = "black";
+  } else {
+    body.classList.add("dark");
+    themeChanger.innerHTML = "Dark Mode";
+    themeChanger.style.color = "white";
+  }
+};
