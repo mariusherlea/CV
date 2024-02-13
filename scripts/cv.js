@@ -103,7 +103,7 @@ const experienceList = {
   },
 
   render() {
-    const renderHook = document.getElementById("experience");
+    const renderElement = document.getElementById("experience");
     const expList = document.createElement("ul");
     for (exp of this.experience) {
       const expEl = document.createElement("li");
@@ -122,7 +122,7 @@ const experienceList = {
             `;
       expList.append(expEl);
     }
-    renderHook.append(expList);
+    renderElement.append(expList);
   },
 };
 

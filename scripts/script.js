@@ -37,9 +37,11 @@ const darkMode = () => {
     body.classList.remove("dark");
     themeChanger.innerHTML = "White Mode";
     themeChanger.style.color = "black";
+    themeChanger.style.backgroundColor = "white";
   } else {
     body.classList.add("dark");
     themeChanger.innerHTML = "Dark Mode";
     themeChanger.style.color = "white";
+    themeChanger.style.backgroundColor = "black";
   }
 };
