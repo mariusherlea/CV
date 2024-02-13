@@ -1,4 +1,4 @@
-/*variable*/
+/*variables*/
 
 /*reset*/
 
@@ -36,26 +36,22 @@ a:hover {
   color: #e6e6e6;
 }
 
+img {
+  width: 15%;
+}
+
 /*fonts*/
 
 /*mobile styles*/
 
-img {
-  width: 20%;
-}
-
 /*small tablet styles*/
-
 @media screen and (min-width: 620px) {
-  img {
-    width: 50%;
-  }
 }
 
 /* large table and laptop */
-
 @media screen and (min-width: 960px) {
 }
+
 /*desktop styles*/
 @media screen and (min-width: 1200px) {
 }
