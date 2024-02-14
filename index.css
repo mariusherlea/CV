@@ -19,9 +19,7 @@ nav li.active {
   background-color: rgb(243, 225, 147);
 }
 #header {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+  display: block;
 }
 
 h1 {
@@ -92,12 +90,43 @@ blockquote:after {
   bottom: 1rem;
 }
 
+.front {
+  background-image: linear-gradient(
+    to bottom,
+    #051937,
+    #004d7a,
+    #008793,
+    #00bf72,
+    #a8eb12
+  );
+}
+#section3 > div.flex > div.front {
+  padding-right: 1rem;
+}
+
+#section3 > div.flex > div.front > ul > li:nth-child(2) > ul {
+  text-shadow: 1px 1px 2px white;
+}
+
+#age {
+  text-shadow: 1px 1px 2px black;
+}
+
+#section3 > div.front > a > img {
+  width: 3%;
+}
+
 /*fonts*/
 
 /*mobile styles*/
 
 /*small tablet styles*/
 @media screen and (min-width: 620px) {
+  #header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
   nav ul {
     flex-direction: row;
   }

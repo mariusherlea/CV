@@ -51,17 +51,9 @@ const experienceList = {
       "Sebes",
       "Sales"
     )),
-    (chiefProfi = new Experience(
-      `${new Date("2016-01-10T14:00:00")}`,
-      `${new Date("2018-11-10T14:00:00")}`,
-      "Chief Shop",
-      "Profi",
-      "Abrud",
-      "Sales"
-    )),
     (deputyPenny = new Experience(
-      `${new Date("2013-01-10T14:00:00")}`,
-      `${new Date("2014-11-10T14:00:00")}`,
+      `${new Date("2011-01-10T14:00:00")}`,
+      `${new Date("2012-11-10T14:00:00")}`,
       "Deputy Chief Shop",
       "Penny Market",
       "Sebes",
