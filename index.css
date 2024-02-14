@@ -41,6 +41,7 @@ h3 {
 }
 ul {
   list-style: none;
+  padding-left: 1rem;
 }
 .active {
   display: block;
@@ -106,6 +107,10 @@ blockquote:after {
 
 #section3 > div.flex > div.front > ul > li:nth-child(2) > ul {
   text-shadow: 1px 1px 2px white;
+}
+
+#section3 > div.flex > div:nth-child(2) {
+  padding-left: 1rem;
 }
 
 #age {
