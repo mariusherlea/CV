@@ -1,18 +1,43 @@
 /*variables*/
-
+@import url("https://fonts.googleapis.com/css?family=Special+Elite");
 /*reset*/
 
 /*base style*/
 
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+nav > ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
 nav li.active {
   background-color: rgb(243, 225, 147);
-  color: white;
 }
 #header {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
+
+h1 {
+  font-family: "Special Elite", cursive;
+}
+
+h2 {
+  color: green;
+  text-shadow: 1px 1px 2px rgb(255, 255, 255);
+}
+
+h3 {
+  color: red;
+  text-shadow: 1px 1px 2px rgb(255, 255, 255);
+}
+
 .hidden {
   display: none;
 }
@@ -39,6 +64,33 @@ a:hover {
 img {
   width: 15%;
 }
+.flex {
+  display: flex;
+  flex-direction: column;
+}
+
+blockquote {
+  text-align: center;
+  font-family: "Special Elite", cursive;
+  font-weight: 100;
+  font-size: 1.5rem;
+  max-width: 600px;
+  line-height: 1.4;
+  margin: 0;
+  padding: 0.5rem;
+}
+
+blockquote:before {
+  content: "“";
+  left: -5rem;
+  top: -2rem;
+}
+
+blockquote:after {
+  content: "”";
+  right: -5rem;
+  bottom: 1rem;
+}
 
 /*fonts*/
 
@@ -46,6 +98,13 @@ img {
 
 /*small tablet styles*/
 @media screen and (min-width: 620px) {
+  nav ul {
+    flex-direction: row;
+  }
+
+  .flex {
+    flex-direction: row;
+  }
 }
 
 /* large table and laptop */
